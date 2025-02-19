@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import AboutHeroImg from '../assets/hero.jpg'
+import AboutHeroImg from '../assets/hero.jpeg'
 
 const AboutNav = () => {
 
