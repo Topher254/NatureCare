@@ -11,8 +11,6 @@ const AboutNav = () => {
   const handleTabs = (tab) => {
     setTab(tab)
   }
-
-  // Function to check the pages
   
 
   return (
