@@ -68,7 +68,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                   <div className="flex gap-4 mt-6">
-                    <a href="tel:+254743739212">
+                    <a href="">
                       <FaPhone
                         size={22}
                         className="hover:opacity-90  hover:scale-105 transition-all cursor-pointer text-white "
@@ -81,7 +81,7 @@ const Navbar = () => {
                       />
                     </a>
                     <a
-                      href="https://wa.me/254743739212?text=Hello"
+                      href=""
                       target="_blank"
                       rel="noopener noreferrer"
                     >
