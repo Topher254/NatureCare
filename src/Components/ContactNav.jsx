@@ -51,19 +51,6 @@ const ContactNav = () => {
 
             </div>
 
-            {/* Small screen navbar */}
-            {/* <div className='items-center pt-2'>
-
-                <ul className='flex flex-col text-left w-[50%] mx-auto gap-5 text-[18px] font-semibold'>
-                    <li onClick={() => handleTabs(1)} className={`${tab === 1 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[60px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/">Home</Link></li>
-                    <li onClick={() => handleTabs(2)} className={`${tab === 2 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[60px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/about">About</Link></li>
-                    <li onClick={() => handleTabs(3)} className={`${tab === 3 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[140px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/gettingstarted">Getting Started</Link></li>
-                    <li onClick={() => handleTabs(4)} className={`${tab === 4 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[80px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/services">Service</Link>s</li>
-                    <li onClick={() => handleTabs(5)} className={`${tab === 5 ? 'text-yellow-300 border-b-[1px] px-1' : 'text-amber-700'} cursor-pointer w-[75px] mb-4 hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/contact">Contact</Link></li>
-                </ul>
-
-            </div> */}
-
         </div>
 
     </div>
