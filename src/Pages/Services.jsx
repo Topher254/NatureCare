@@ -23,7 +23,7 @@ const Services = () => {
           <div className='lg:flex lg:gap-8 space-y-6'>
 
             {/* Div 1 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaHouse className='text-amber-600  size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Housing Navigation</h2>
@@ -32,7 +32,7 @@ const Services = () => {
             </div>
 
             {/* Div 2 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaMound className='text-amber-600  size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Transitional Assistance</h2>
@@ -41,7 +41,7 @@ const Services = () => {
             </div>
 
             {/* Div 3 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaHeartPulse className='text-amber-600  size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Health Monitoring</h2>
@@ -55,7 +55,7 @@ const Services = () => {
           <div className='lg:flex lg:gap-8 lg:py-10 space-y-6 mt-6'>
 
             {/* Div 1 - Row 2 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaHandHoldingHeart className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Community Resources</h2>
@@ -64,7 +64,7 @@ const Services = () => {
             </div>
 
             {/* Div 2 - Row 2 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaUserShield className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Behavioral Support</h2>
@@ -73,7 +73,7 @@ const Services = () => {
             </div>
 
             {/* Div 3 - Row 2 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaShieldAlt className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Safety Planning</h2>
@@ -87,7 +87,7 @@ const Services = () => {
           <div className='lg:flex lg:gap-8 lg:py-10 space-y-6 mt-6'>
 
             {/* Div 1 - Row 3 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaFirstAid className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Medical Coordination</h2>
@@ -96,7 +96,7 @@ const Services = () => {
             </div>
 
             {/* Div 2 - Row 3 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaUserSecret className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Counseling Services</h2>
@@ -105,7 +105,7 @@ const Services = () => {
             </div>
 
             {/* Div 3 - Row 3 */}
-            <div className='hover:border-t-[0.5px] border-amber-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-pointer'>
+            <div className='hover:border-t-[0.5px] border-gray-300 hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-gray-400  duration-500 ease-in-out cursor-pointer'>
 
               <FaSatellite className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Advocacy Support</h2>

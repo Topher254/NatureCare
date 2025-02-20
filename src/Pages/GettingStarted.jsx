@@ -18,9 +18,9 @@ const GettingStarted = () => {
         <div className='mx-auto w-[80%] m-10'>
 
           {/* Overview Div */}
-          <div className='border-t-[0.5px] border-amber-300  rounded-lg p-6 shadow-md shadow-amber-400 hover:scale-105 duration-500 ease-in-out'>
+          <div className='border-t-[0.5px] border-gray-300  rounded-lg p-6 shadow-md shadow-gray-400 hover:scale-105 duration-500 ease-in-out'>
 
-            <h2 className='text-3xl font-semibold text-amber-500 py-6'>Overview</h2>
+            <h2 className='text-3xl font-semibold text-amber-600 py-6'>Overview</h2>
 
             <div className='flex gap-2 items-center py-2'>
               <FaHouse className='size-6 text-yellow-400'/>
@@ -80,9 +80,9 @@ const GettingStarted = () => {
         <div className='w-[80%] mx-auto m-10'>
 
           {/* Eligibilty Div */}
-          <div className='border-t-[0.5px] rounded-lg border-amber-300 p-6 shadow-md shadow-amber-400 hover:scale-105 duration-500 ease-in-out'>
+          <div className='border-t-[0.5px] rounded-lg border-gray-300 p-6 shadow-md shadow-gray-400 hover:scale-105 duration-500 ease-in-out'>
 
-              <h2 className='text-3xl font-semibold text-amber-500 py-6'>Eligibility Requirements</h2>
+              <h2 className='text-3xl font-semibold text-amber-600 py-6'>Eligibility Requirements</h2>
 
               <div className='items-center py-2'>
                 <p className='font-medium italic text-gray-600'>To qualify for House Stabilization Services (HSS), individuals must meet the following criteria:</p>
@@ -104,12 +104,12 @@ const GettingStarted = () => {
               </div>
 
               <div className='flex gap-2 items-center py-2'>
-                <FaCheckSquare className='size-4 text-yellow-400'/>
+                <FaCheckSquare className='lg:size-4 sm:size-5 size-9 text-yellow-400'/>
                 <p className='font-medium italic text-gray-600'>Require assistance with communication, mobility, decision-making, or behavior management due to the disability</p>
               </div>
 
               <div className='flex gap-2 items-center py-2'>
-                <FaCheckSquare className='size-4 text-yellow-400'/>
+                <FaCheckSquare className='lg:size-4 sm:size-5 size-9 text-yellow-400'/>
                 <p className='font-medium italic text-gray-600'>Face housing instability (homelessness, transitioning from an institution, or at risk of institutionalization)</p>
               </div>
 

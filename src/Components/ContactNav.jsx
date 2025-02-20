@@ -29,7 +29,7 @@ const ContactNav = () => {
             {/* Logo image div */}
             <div className='size-36 text-center'>
                 <a href="/">
-                <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 py-1 w-[200px] hover:scale-110 duration-300 ease-in-out'>Nature Care <br /> Services</h2>
+                <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 py-1 w-[200px] hover:text-amber-700 duration-300 ease-in-out'>Nature Care <br /> Services</h2>
                 </a>
             </div>
 
@@ -41,7 +41,7 @@ const ContactNav = () => {
             </div>
 
             <div className='items-center pt-4'>
-                <ul className={`${ openMenu ? 'block' : 'hidden'} lg:flex lg:gap-5 text-[18px] font-semibold lg:w-full w-[40%] mx-auto transition-all duration-500 ease-in-out`}>
+                <ul className={`${ openMenu ? 'max-h-[500px]' : 'max-h-[0px] lg:max-h-full'} lg:flex lg:gap-5 text-[18px] font-semibold lg:w-full w-[40%] mx-auto transition-all duration-600 ease-in-out overflow-hidden `}>
                     <li onClick={() => handleTabs(1)} className={`${tab === 1 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[60px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/">Home</Link></li>
                     <li onClick={() => handleTabs(2)} className={`${tab === 2 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer w-[60px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/about">About</Link></li>
                     <li onClick={() => handleTabs(3)} className={`${tab === 3 ? 'text-yellow-600 border-b-[1px] px-1' : 'text-yellow-700'} cursor-pointer  w-[140px] hover:text-yellow-500 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/gettingstarted">Getting Started</Link></li>

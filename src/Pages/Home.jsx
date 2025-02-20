@@ -16,19 +16,19 @@ function Home() {
 
           <h1 className='text-center lg:text-4xl text-3xl font-bold text-amber-500'>Our Committments</h1>
           
-          <div className='lg:flex space-x-5 w-[80%] mx-auto py-10'>
+          <div className='lg:flex lg:space-x-5 space-y-6 w-[80%] mx-auto py-10'>
 
             {/* Div 1 */}
-            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-progress'>
+            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:border-t-2 hover:border-gray-300 hover:shadow-gray-400  duration-500 ease-in-out cursor-progress'>
 
               <FaUserCheck className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
-              <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Client Centerd Approach</h2>
+              <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Client Centered Approach</h2>
               <p className='text-center font-medium'>Our services are designed around you, ensuring that your goals and preferences are always at the forefront of our care.</p>
 
             </div>
 
             {/* Div 2 */}
-            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-progress'>
+            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:border-t-2 hover:border-gray-300 hover:shadow-gray-400  duration-500 ease-in-out cursor-progress'>
 
               <FaHandshake className='text-amber-600 size-28 mx-auto rotate-[-20deg] rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Reliable Support</h2>
@@ -37,7 +37,7 @@ function Home() {
             </div>
 
             {/* Div 3 */}
-            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:shadow-yellow-300  duration-500 ease-in-out cursor-progress'>
+            <div className='hover:scale-105 rounded-lg p-6 hover:shadow-md hover:border-t-2 hover:border-gray-300 hover:shadow-gray-400  duration-500 ease-in-out cursor-progress'>
 
               <FaArrowTrendUp className='text-amber-600 size-28 mx-auto rounded-full bg-amber-100 p-6'/>
               <h2 className='text-center font-semibold text-2xl text-yellow-500 py-4'>Continuous Improvement</h2>

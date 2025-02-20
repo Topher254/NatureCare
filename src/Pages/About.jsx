@@ -17,7 +17,7 @@ function About() {
         <h2 className='lg:text-5xl text-4xl text-center underline font-bold text-amber-700 pb-20'>About Us</h2>
 
         {/* About Section / Div */}
-        <div className='border-t-[0.2px] border-amber-300 rounded-md shadow-md shadow-amber-300 p-10 mb-6'>
+        <div className='border-t-[0.2px] border-gray-400 rounded-md shadow-md shadow-gray-400 p-10 mb-6'>
 
           <div className='lg:flex items-center'>
 
@@ -37,7 +37,7 @@ function About() {
         {/* Mission Section / Div */}
         <div>
 
-          <div className='border-t-[0.5px] border-amber-300 rounded-md shadow-md shadow-amber-300 p-10 mb-6'>
+          <div className='border-t-[0.5px] border-gray-400 rounded-md shadow-md shadow-gray-400 p-10 mb-6'>
 
             <div className='lg:flex items-center'>
 
@@ -63,7 +63,7 @@ function About() {
         {/* Vision section / Div */}
         <div>
 
-          <div className='border-t-[0.2px] border-amber-300 rounded-md shadow-md shadow-amber-300 p-10 mb-6'>
+          <div className='border-t-[0.2px] border-gray-400 rounded-md shadow-md shadow-gray-400 p-10 mb-6'>
 
             <div className='lg:flex items-center'>
 

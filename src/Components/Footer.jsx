@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaHandPointLeft, FaHome,FaPhone, FaPhoneSquare, FaQuestion, FaRegClock, FaTelegramPlane, FaTools } from 'react-icons/fa'
+import { FaEnvelope, FaHandPointLeft, FaHandPointRight, FaHome,FaPhone, FaPhoneSquare, FaQuestion, FaRegClock, FaTelegramPlane, FaTools } from 'react-icons/fa'
 import { FaCalendarXmark, FaLocationDot} from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ function Footer() {
 
           <div className='size-36 '>
               <a href="/">
-                <h2 className='text-3xl font-extrabold text-yellow-600 py-1 w-[200px] hover:text-yellow-400 hover:scale-110 duration-300 ease-in-out'>Nature Care <br /> Services</h2>
+                <h2 className='text-3xl font-extrabold text-yellow-600 py-1 w-[200px] hover:text-yellow-800 duration-300 ease-in-out'>Nature Care <br /> Services</h2>
               </a>
           </div>
 
@@ -66,19 +66,24 @@ function Footer() {
             {/* Links */}
             <ul className='text-start font-medium justify-self-center'>
               <li className='flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out'>
-                <Link to="/">Home</Link><FaHome/>
+                <FaHome className='text-gray-700'/>
+                <Link to="/">Home</Link>
               </li>
               <li className='flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out'>
-                <Link to="/about">About Us</Link><FaQuestion/> 
+                <FaQuestion className='text-gray-700'/>
+                <Link to="/about">About Us</Link> 
               </li>
               <li className='flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out'>
-                <Link to="/gettingstarted">Get Started</Link> <FaHandPointLeft/>  
+                <FaHandPointRight className='text-gray-700'/>
+                <Link to="/gettingstarted">Get Started</Link>   
               </li>
               <li className='flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out'>
-                <Link to="/services">Services</Link> <FaTools/>
+                <FaTools className='text-gray-700'/>  
+                <Link to="/services">Services</Link> 
               </li>
               <li className='flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out'>
-                <Link to="/contact">Contact</Link> <FaTelegramPlane/>
+                <FaTelegramPlane className='text-gray-700'/>
+                <Link to="/contact">Contact</Link> 
               </li>
             </ul>
 
