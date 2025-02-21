@@ -37,7 +37,7 @@ const Navbar = () => {
 
           {/* Logo image div */}
           <div className='size-36 w-[100%]'>
-              <a href="/">
+              <a href="/"> 
                 <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 lg:py-2 py-[40px] lg:w-[200px] hover:text-yellow-700 duration-300 ease-in-out text-center'>Nature Care <br /> Services</h2>
               </a>
           </div>
