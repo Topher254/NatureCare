@@ -36,7 +36,7 @@ const ServicesNav = () => {
                 <div className='absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-sm w-[100%] py-5 space-y-4 text-white'>
                     <h1 className='font-extrabold lg:text-6xl text-4xl lg:py-4 py-2'>Nature Care Services</h1>
                     <p className=' lg:text-2xl text-[18px] italic '>Where Care Meets Stability.</p>
-                    <button className='border-none rounded-lg mt-4 lg:py-4 py-2 lg:px-8 px-4 lg:text-[16px] font-medium cursor-pointer bg-primaryyellow text-white hover:bg-gray-600 hover:opacity-90 duration-300 ease-in-out'>
+                    <button className='border-none rounded-lg mt-4 lg:py-4 py-3 lg:px-8 px-6 lg:text-[16px] font-medium cursor-pointer bg-primaryyellow text-white hover:bg-green-400 hover:opacity-90 duration-300 ease-in-out'>
                         <Link to="/">Welcome</Link>
                     </button>
                 </div>

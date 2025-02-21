@@ -19,12 +19,12 @@ function Home() {
   
     <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center md:px-6 bg-opacity-50">
       <h1 className="text-4xl sm:text-6xl font-bold p-1 bg-primaryyellow">
-        Nature Care specializes in House Stabilization Services,
+        Nature Care  Services.
       </h1>
-      <h1 className="hidden md:block text-4xl sm:text-6xl font-bold ">empowering families with secure, stable housing solutions for a better future.</h1>
+      <h1 className="hidden md:block text-4xl sm:text-6xl font-bold ">housing stabilization services</h1>
 
       
-      <button className="mt-6 bg-primaryyellow text-white py-3 px-6 rounded-lg text-lg hover:opacity-90  hover:bg-yellow-400 transition-all">
+      <button className="mt-6 bg-primaryyellow text-white py-3 px-6 rounded-lg text-lg hover:opacity-90  hover:bg-green-400 transition-all">
         <Link to="/gettingstarted">Get Started</Link>
       </button>
     </div>

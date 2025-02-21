@@ -91,23 +91,23 @@ function Footer() {
 
             {/* Links */}
             <ul className="text-start font-medium ">
-              <li className="flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out">
+              <li className="flex gap-1 items-center  hover:scale-110 duration-300 ">
                 <FaHome className="" />
                 <Link to="/">Home</Link>
               </li>
-              <li className="flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out">
+              <li className="flex gap-1 items-center  hover:scale-110 duration-300 ">
                 <FaQuestion className="" />
                 <Link to="/about">About Us</Link>
               </li>
-              <li className="flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out">
+              <li className="flex gap-1 items-center  hover:scale-110 duration-300 ">
                 <FaHandPointRight className="" />
                 <Link to="/gettingstarted">Get Started</Link>
               </li>
-              <li className="flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out">
+              <li className="flex gap-1 items-center  hover:scale-110 duration-300 ">
                 <FaTools className="" />
                 <Link to="/services">Services</Link>
               </li>
-              <li className="flex gap-1 items-center hover:text-amber-500 hover:scale-110 duration-300 ease-in-out">
+              <li className="flex gap-1 items-center  hover:scale-110 duration-300 ">
                 <FaTelegramPlane className="" />
                 <Link to="/contact">Contact</Link>
               </li>

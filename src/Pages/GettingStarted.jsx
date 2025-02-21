@@ -21,7 +21,7 @@ const GettingStarted = () => {
           
           {/* Overview Div */}
           <div className=' rounded-2xl p-6 shadow-md  hover:scale-105 duration-500 ease-in-out'>
-            <h2 className='text-3xl font-semibold text-amber-600 py-6'>Overview</h2>
+            <h2 className='text-3xl font-semibold text-primaryyellow py-6'>Overview</h2>
             <div className='flex gap-2 items-center py-2'>
               <FaHouse className='text-yellow-400' size={20}/>
               <p className='font-medium italic text-gray-600'>
@@ -86,7 +86,7 @@ const GettingStarted = () => {
 
           {/* Eligibility Div */}
           <div className='rounded-2xl p-6 shadow-md  hover:scale-105 duration-500 ease-in-out'>
-            <h2 className='text-3xl font-semibold text-amber-600 py-6'>Eligibility Requirements</h2>
+            <h2 className='text-3xl font-semibold text-primaryyellow py-6'>Eligibility Requirements</h2>
             <div className='py-2'>
               <p className='font-medium italic text-gray-600'>
                 To qualify for House Stabilization Services (HSS), individuals must meet the following criteria:

@@ -119,8 +119,8 @@ const Navbar = () => {
               </div>
 
               {/* Contact Us Button */}
-              <div className="bg-white flex justify-center items-center w-full  sm:w-1/5">
-                <button className="font-semibold hover:bg-yellow-500 hover:text-white hover:opacity-90 bg-white py-4 px-8 cursor-pointer transition-all text-gray-800">
+              <div className="bg-white flex justify-center items-center w-1/2 md:w-full  sm:w-fit">
+                <button className="font-semibold hover:bg-green-400 hover:border-b-white hover:text-white hover:opacity-95 bg-white py-4 px-8 cursor-pointer transition-all text-gray-800">
                   <Link to="/contact" className="w-fit border-b-2 border-primaryyellow">
                     CONTACT US
                   </Link>
