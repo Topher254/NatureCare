@@ -1,29 +1,18 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import HeroImg from '../assets/hero2.jpg'
-import { FaX } from 'react-icons/fa6'
-import { FaBars } from 'react-icons/fa'
+import React, { useEffect, useState } from "react";
+import { FaBars, FaX, FaInstagram, FaPhone, FaTiktok, FaWhatsapp } from "react-icons/fa6";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logon.jpg";
+import logo2 from "../assets/logonbg.png";
+import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 
 const Navbar = () => {
+  const [sideMenu, setSideMenu] = useState(false);
+  const location = useLocation();
 
-  // Function to handle the menu
-    const [openMenu, setOpenMenu] = useState(false)
-
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu)
-
-    }
-
-  const [tab, setTab] = useState(true)
-  const [pages, setPages] = useState(true)
-
-  // Function to hanlde the tabs on active session
-  const handleTabs = (tab) => {
-    setTab(tab)
-  }
-
-  // Function to check the pages
-  
+  // Whenever the location changes, close the side menu.
+  useEffect(() => {
+    setSideMenu(false);
+  }, [location]);
 
   return (
     <div>
@@ -37,44 +26,119 @@ const Navbar = () => {
 
           {/* Logo image div */}
           <div className='size-36 w-[100%]'>
-              <a href="/"> 
+              <a href="/">
                 <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 lg:py-2 py-[40px] lg:w-[200px] hover:text-yellow-700 duration-300 ease-in-out text-center'>Nature Care <br /> Services</h2>
               </a>
           </div>
 
-          {/* Nav links div */}
-
-          <div className='right-24 sm:right-36 md:right-48 top-[110px] absolute lg:hidden'>
-              { openMenu ? (<FaX onClick={toggleMenu} className='size-6 text-amber-400 cursor-pointer hover:text-amber-700 hover:size-7 duration-300 ease-in-out lg:hidden'/>) : (<FaBars onClick={toggleMenu} className='size-6 text-amber-400 cursor-pointer hover:text-amber-700 hover:size-7 duration-300 ease-in-out lg:hidden'/>)
-              }
+      {/* Navbar overlay ...this first div has a marging/padding,not sure*/}
+      <div className="">
+        <div className="flex sm:justify-center sm:items-center w-full">
+          <div className="w-1/5 hidden md:flex justify-center items-end">
+            <img
+              src={logo}
+              alt="logio"
+              className="max-h-16 h-full pl-6 cursor-pointer hover:opacity-90"
+            />
           </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full z-10 sm:relative">
+              {/* Small screen hamburger */}
+              <div className="flex pl-2 items-center text-white sm:hidden bg-primaryyellow w-1/2">
+                <button onClick={() => setSideMenu(true)}>
+                  <HiMiniBars3BottomLeft size={35} className="font-semibold p-1 hover:cursor-pointer" />
+                </button>
+              </div>
 
-          <div className='lg:items-center lg:pt-4 w-[100%]'>
-              <ul className={` ${ openMenu ? 'max-h-[600px]' : 'max-h-[0px] lg:max-h-full bg-transparent '} lg:flex lg:gap-5 text-[18px] font-semibold lg:pt-0 pt-4 bg-amber-100 lg:bg-transparent w-[100%] pl-4 lg:pl-0 pb-4 text-orange-400 justify-items-center transition-all duration-500 ease-in-out overflow-hidden`}>
-                  <li onClick={() => handleTabs(1)} className={`${tab === 1 ? 'text-yellow-600 border-b-[1px] px-1' : 'lg:text-yellow-300'} pt-4 lg:pt-0 w-[60px] cursor-pointer hover:text-amber-700 hover:border-b-[1px] hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/">Home</Link></li>
-                  <li onClick={() => handleTabs(2)} className={`${tab === 2 ? 'text-yellow-600 border-b-[1px] px-1' : 'lg:text-yellow-300'} w-[60px] cursor-pointer hover:text-amber-700 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/about">About</Link></li>
-                  <li onClick={() => handleTabs(3)} className={`${tab === 3 ? 'text-yellow-600 border-b-[1px] px-1' : 'lg:text-yellow-300'} w-[140px] cursor-pointer hover:text-amber-700 ml-20 lg:ml-0 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/gettingstarted">Getting Started</Link></li>
-                  <li onClick={() => handleTabs(4)} className={`${tab === 4 ? 'text-yellow-600 border-b-[1px] px-1' : 'lg:text-yellow-300'} w-[70px] cursor-pointer hover:text-amber-700 ml-2 lg:ml-0 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/services">Service</Link>s</li>
-                  <li onClick={() => handleTabs(5)} className={`${tab === 5 ? 'text-yellow-600 border-b-[1px] px-1' : 'lg:text-yellow-300'} w-[70px] cursor-pointer hover:text-amber-700 ml-2 lg:ml-0 hover:border-b-[1px] hover:py-0 hover:px-1 hover:rounded-sm duration-300 ease-in-out`}><Link to="/contact">Contact</Link></li>
-              </ul>
+              {/* Side menu for small screens */}
+              {sideMenu && (
+                <div className="fixed top-0 left-0 w-full h-screen bg-gray-800 text-white z-50 flex flex-col justify-center items-center">
+                  <button
+                    onClick={() => setSideMenu(false)}
+                    className="absolute top-6 right-6 text-white"
+                  >
+                    <FaX size={30} />
+                  </button>
+                  <img src={logo2} alt="logo" className="w-16 h-16 p-2" />
+                  <ul className="text-2xl space-y-6 text-center">
+                    <li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">
+                      <Link to="/">HOME</Link>
+                    </li>
+                    <li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">
+                      <Link to="/about">ABOUT</Link>
+                    </li>
+                    <li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">
+                      <Link to="/gettingstarted">GET STARTED</Link>
+                    </li>
+                    <li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">
+                      <Link to="/services">SERVICES</Link>
+                    </li>
+                  </ul>
+                  <div className="flex gap-4 mt-6">
+                    <a href="">
+                      <FaPhone
+                        size={22}
+                        className="hover:opacity-90  hover:scale-105 transition-all cursor-pointer text-white "
+                      />
+                    </a>
+                    <a href="">
+                      <FaInstagram
+                        size={25}
+                        className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
+                      />
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaWhatsapp
+                        size={25}
+                        className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
+                      />
+                    </a>
+                    <a href="">
+                      <FaTiktok
+                        size={20}
+                        className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
+                      />
+                    </a>
+                  </div>
+                </div>
+              )}
 
+              {/* Large Screen Navigation */}
+              <div className="hidden md:flex sm:py-2  bg-primaryyellow sm:px-14 w-3/5">
+                <ul className="flex justify-center items-center gap-4 lg:gap-8 text-white">
+                  <li className="hover:cursor-pointer hover:border-b-2 transition-all opacity-95 hover:text-gray-200">
+                    <Link to="/">HOME</Link>
+                  </li>
+                  <li className="hover:cursor-pointer hover:border-b-2 transition-all opacity-95 hover:text-gray-200">
+                    <Link to="/about">ABOUT</Link>
+                  </li>
+                  <li className="hover:cursor-pointer hover:border-b-2 transition-all opacity-95 hover:text-gray-200">
+                    <Link to="/gettingstarted">GET STARTED</Link>
+                  </li>
+                  <li className="hover:cursor-pointer hover:border-b-2 transition-all opacity-95 hover:text-gray-200">
+                    <Link to="/services">SERVICES</Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact Us Button */}
+              <div className="bg-white flex justify-center items-center w-1/2 md:w-full  sm:w-fit">
+                <button className="font-semibold hover:bg-green-400 hover:border-b-white hover:text-white hover:opacity-95 bg-white py-4 px-8 cursor-pointer transition-all text-gray-800">
+                  <Link to="/contact" className="w-fit border-b-2 border-primaryyellow">
+                    CONTACT US
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
-
         </div>
-
-        {/* (Hero) Profile Section */}
-        <div className='absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center w-[100%] backdrop-blur-[3px] py-6 space-y-5'>
-          <h1 className='font-extrabold lg:text-5xl md:text-4xl text-[26px] py-4 '>Welcome to Nature Care Services</h1>
-          <p className='font-bold md:text-2xl text-[18px] italic text-gray-300'>Where Care Meets Stability.</p>
-          <button className='border-none rounded-full mt-10 lg:py-4 lg:px-8 lg:text-[16px] py-2 px-4 font-medium cursor-pointer bg-amber-400 text-gray-600 hover:bg-gray-600 hover:text-amber-500 duration-300 ease-in-out'>
-            <Link to="/gettingstarted">Get Started</Link>
-          </button>
-        </div>
-        
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
