@@ -13,8 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     setSideMenu(false);
   }, [location]);
-
-  return (
+return (
     <div>
 
       {/* Hero Section */}
@@ -30,7 +29,7 @@ const Navbar = () => {
                 <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 lg:py-2 py-[40px] lg:w-[200px] hover:text-yellow-700 duration-300 ease-in-out text-center'>Nature Care <br /> Services</h2>
               </a>
           </div>
-
+      <div/>
       {/* Navbar overlay ...this first div has a marging/padding,not sure*/}
       <div className="">
         <div className="flex sm:justify-center sm:items-center w-full">
@@ -138,7 +137,9 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+</div>  
+  )
+}
 
-export default Navbar;
+export default Navbar
