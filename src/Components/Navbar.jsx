@@ -13,17 +13,23 @@ const Navbar = () => {
   useEffect(() => {
     setSideMenu(false);
   }, [location]);
-
-  return (
+return (
     <div>
-      <div className="w-full flex md:hidden justify-center items-center">
-        <img
-          src={logo}
-          alt="logio"
-          className="max-h-12 h-full pl-6 cursor-pointer hover:opacity-90"
-        />
-      </div>
 
+      {/* Hero Section */}
+      <div className=''>
+        <img src={HeroImg} alt="Hero Image" className='w-full lg:h-[780px] h-[800px] object-cover object-top blur-[1px]' />
+
+        {/* Navbar section */}
+        <div className='lg:flex lg:justify-between lg:space-x-40 lg:px-20 mx-auto lg:py-10 top-0 left-0 right-0 absolute'>
+
+          {/* Logo image div */}
+          <div className='size-36 w-[100%]'>
+              <a href="/">
+                <h2 className='text-2xl font-bold text-yellow-600 bg-amber-100 px-4 lg:py-2 py-[40px] lg:w-[200px] hover:text-yellow-700 duration-300 ease-in-out text-center'>Nature Care <br /> Services</h2>
+              </a>
+          </div>
+      <div/>
       {/* Navbar overlay ...this first div has a marging/padding,not sure*/}
       <div className="">
         <div className="flex sm:justify-center sm:items-center w-full">
@@ -131,7 +137,9 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+</div>  
+  )
+}
 
-export default Navbar;
+export default Navbar
