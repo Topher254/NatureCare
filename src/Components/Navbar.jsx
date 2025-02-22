@@ -3,6 +3,7 @@ import { FaBars, FaX, FaInstagram, FaPhone, FaTiktok, FaWhatsapp } from "react-i
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logon.jpg";
 import logo2 from "../assets/logonbg.png";
+import HeroImg from "../assets/hero.jpeg"
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 
 const Navbar = () => {
