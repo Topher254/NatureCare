@@ -9,12 +9,12 @@ function Home() {
   return (
     <div>
     <div className="relative w-full h-[80vh]">
- 
-    <img 
+ <img 
       src={hero1} 
       alt="hero image" 
       className="object-cover w-full h-full"
     />
+  
   
   
     <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center md:px-6 bg-opacity-50">

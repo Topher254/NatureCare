@@ -42,13 +42,13 @@ function Contact() {
 
             <form action="">
               <label htmlFor="" className='font-medium text-primaryyellow'>Want to know more ? Contact us below</label> <br />
-              <input type="text" placeholder='E.g; John Doe' className='text-gray-800 outline-0 w-fit  border-[0.5px] lg:w-[350px] md:w-full rounded-sm py-1 px-2 mt-2 mb-4' required/> <br />
+              <input type="text" placeholder='E.g; John Doe' className='text-gray-800 outline-0 min-w-fit  border-[0.5px] lg:w-[350px] md:w-full rounded-sm py-1 px-2 mt-2 mb-4' required/> <br />
               <input type="email" placeholder='E.g; johndoe@gmail.com' className='text-gray-800 outline-0  border-[0.5px] lg:w-[350px] w-fit md:w-full rounded-sm py-1 px-2 mb-4' required/> <br />
               <input type="text" placeholder='E.g; +167123456789' className='text-gray-80 outline-0 0 border-[0.5px] lg:w-[350px] w-fit md:w-full rounded-sm py-1 px-2 mb-4' required/> <br />
               
               <textarea name="" id="" placeholder='Enter your text' className='text-gray-800 outline-0  border-[0.5px] lg:w-[350px] w-fit md:w-full lg:h-[130px] h-[100px] rounded-sm py-1 px-2 mb-4 font-mono' required></textarea> <br />
 
-              <button type="submit" className='flex gap-2 items-center text-center border rounded-md px-4 py-2 font-medium cursor-pointer hover:bg-gray-700 hover:text-white duration-300 ease-in-out'>Send <FaTelegramPlane className='size-5'/> </button>
+              <button type="submit" className='flex gap-2 items-center text-center border rounded-md px-4 py-2 font-medium cursor-pointer hover:bg-primaryyellow hover:text-white duration-300 ease-in-out'>Send <FaTelegramPlane className='size-5'/> </button>
               
             </form>
 
