@@ -82,32 +82,7 @@ const Navbar = () => {
               <Link to="/services">SERVICES</Link>
             </li>
           </ul>
-          <div className="flex gap-4 mt-6">
-            <a href="">
-              <FaPhone
-                size={22}
-                className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
-              />
-            </a>
-            <a href="">
-              <FaInstagram
-                size={25}
-                className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
-              />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp
-                size={25}
-                className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
-              />
-            </a>
-            <a href="">
-              <FaTiktok
-                size={20}
-                className="hover:opacity-90 hover:scale-105 transition-all cursor-pointer text-white"
-              />
-            </a>
-          </div>
+        
         </div>
       )}
 
