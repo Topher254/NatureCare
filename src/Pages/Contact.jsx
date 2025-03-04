@@ -20,7 +20,7 @@ function Contact() {
   const handleSendEmail = () => {
     const { name, email, phone, message } = formData;
     const subject = `Contact Request from ${name}`;
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0A%0D%0A${message}`;
+    const body = `Name: ${name}___Email: ${email}___Phone: ${phone}___${message}`;
     
     window.location.href = `mailto:naturecareservicesllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
@@ -65,7 +65,7 @@ function Contact() {
               <input
                 type="text"
                 name="name"
-                placeholder="E.g; John Doe"
+                placeholder="john Doe"
                 className='text-gray-800 outline-0 border-[0.5px] lg:w-[350px] rounded-sm py-1 px-2 mt-2 mb-4'
                 value={formData.name}
                 onChange={handleChange}
@@ -75,7 +75,7 @@ function Contact() {
               <input
                 type="email"
                 name="email"
-                placeholder="E.g; johndoe@gmail.com"
+                placeholder="johndoe@gmail.com"
                 className='text-gray-800 outline-0 border-[0.5px] lg:w-[350px] rounded-sm py-1 px-2 mb-4'
                 value={formData.email}
                 onChange={handleChange}
@@ -85,7 +85,7 @@ function Contact() {
               <input
                 type="text"
                 name="phone"
-                placeholder="E.g; +167123456789"
+                placeholder="+16122143256"
                 className='text-gray-800 outline-0 border-[0.5px] lg:w-[350px] rounded-sm py-1 px-2 mb-4'
                 value={formData.phone}
                 onChange={handleChange}

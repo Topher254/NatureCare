@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import ContactHeroImg from '../assets/hero5.jpg'
+import ContactHeroImg from '../assets/min5.jpeg'
 import { FaBars} from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 
