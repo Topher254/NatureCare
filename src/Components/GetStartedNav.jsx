@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import HeroGetStarted from '../assets/hero6.jpg'
+import HeroGetStarted from '../assets/mine.jpeg'
 import { FaBars } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 

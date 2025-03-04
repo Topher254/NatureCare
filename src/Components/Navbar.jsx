@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaX, FaInstagram, FaPhone, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logon.jpg";
+import logo from "../assets/logo.png";
 import logo2 from "../assets/logonbg.png";
 import HeroImg from "../assets/hero.jpeg";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-6">
         
         {/* Div 1: Logo */}
-        <div className="hidden md:flex justify-center items-end">
+        <div className="hidden md:flex md:w-1/5 justify-center items-end">
           <img
             src={logo}
             alt="logo"
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* Div 2: Navigation Links */}
-        <div className="hidden md:flex sm:py-5 hover:py-4.5 bg-primaryyellow sm:px-24">
+        <div className="hidden md:flex md:w-3/5 sm:py-5 hover:py-4.5 bg-primaryyellow sm:px-24">
           <ul className="flex justify-center items-center gap-4 lg:gap-8 text-white">
             <li className="hover:cursor-pointer hover:border-b-2 transition-all opacity-95 hover:text-gray-200">
               <Link to="/">HOME</Link>
@@ -48,8 +48,8 @@ const Navbar = () => {
         </div>
 
         {/* Div 3: Contact Button */}
-        <div className="hidden md:flex justify-center items-center">
-          <button className="hover:bg-green-400 hover:border-b-white hover:text-white hover:opacity-95 bg-white py-4 px-8 cursor-pointer transition-all text-gray-800">
+        <div className="hidden md:flex md:w-1/5 justify-center items-center">
+          <button className="hover:bg-green-600 hover:border-b-white hover:text-white hover:opacity-95 bg-white py-4 px-8 cursor-pointer transition-all text-gray-800">
             <Link to="/contact" className="w-fit border-b-2 border-primaryyellow hover:border-white text-xl">
               CONTACT US
             </Link>

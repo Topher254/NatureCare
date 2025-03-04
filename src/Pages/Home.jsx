@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import { FaHandshake } from 'react-icons/fa'
 import { FaArrowTrendUp, FaUserCheck } from 'react-icons/fa6'
-import hero1 from '../assets/hero.jpeg'
+import hero1 from '../assets/home.jpeg'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
       <h1 className="text-4xl sm:text-6xl font-bold p-1 bg-primaryyellow">
         Nature Care  Services.
       </h1>
-      <h1 className="hidden md:block text-4xl sm:text-6xl font-bold ">housing stabilization services</h1>
+      <h1 className="hidden md:block text-2xl sm:text-3xl font-bold ">housing stabilization services</h1>
 
       
       <button className="mt-6 bg-primaryyellow text-white py-3 px-6 rounded-lg text-lg hover:opacity-90  hover:bg-green-400 transition-all">
